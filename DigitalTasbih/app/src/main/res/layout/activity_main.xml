@@ -48,9 +48,18 @@
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:layout_weight="100"
-                android:src="@drawable/add" />
+                android:src="@drawable/add"/>
 
         </LinearLayout>
+        <TextView
+            android:id="@+id/hide_text"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="#736B6B"
+            android:visibility="visible"
+            android:text="আমল দেখতে 'আমল দেখুন!'বাটন এ ক্লিক করুন !"/>
 
         <Button
             android:id="@+id/go_to_next_page"
