@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/islamic_bg"
+    tools:context=".AmolZikir">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="  কিছু আমল !"
+                android:textColor="#ffffff"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:gravity="center|left"
+                android:background="@drawable/ibada_image"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="✅ আমল: সুবহানাল্লাহ বলা\n🕓 সময়: প্রতিদিন ১০০ বার\n📖 ফজিলত: 'সুবহানাল্লাহ' বলা জান্নাতে একটি গাছ হয়। (তিরমিজি)\n🌿 যিকির: سُبْحَانَ اللَّهِ"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:padding="10dp"
+                android:background="#FFCA28"
+                android:layout_marginBottom="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="✅ আমল: তাসবিহে ফাতেমি\n🕓 সময়: প্রতিদিন ঘুমানোর আগে\n📖 ফজিলত: ক্লান্তি দূর করে, জান্নাতের নেকি লাভ হয়\n🌿 যিকির:\n→ ৩৩ বার সুবহানাল্লাহ\n→ ৩৩ বার আলহামদুলিল্লাহ\n→ ৩৪ বার আল্লাহু আকবার"
+                android:textSize="16sp"
+                android:textColor="#FFFFFF"
+                android:padding="10dp"
+                android:background="#3F51B5"
+                android:layout_marginBottom="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="✅ আমল: সকাল-সন্ধ্যার যিকির\n🕓 সময়: ফজরের পরে ও মাগরিবের পরে\n📖 ফজিলত: শয়তান থেকে হেফাজত ও মানসিক প্রশান্তি\n🌿 যিকির: أَسْتَغْفِرُ اللَّهَ"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:padding="10dp"
+                android:background="#26C6DA"
+                android:layout_marginBottom="10dp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="✅ আমল: দরুদ শরীফ পাঠ\n🕓 সময়: যেকোনো সময়\n📖 ফজিলত: ১ বার দরুদে ১০টি রহমত নাজিল হয় (মুসলিম)\n🌿 যিকির: اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ"
+                android:textSize="16sp"
+                android:textColor="#FFFFFF"
+                android:padding="10dp"
+                android:background="#9C27B0"
+                android:layout_marginBottom="10dp" />
+
+            <Button
+                android:id="@+id/developar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#EC407A"
+                android:text="ডেভেলপার তথ্য !"
+                />
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

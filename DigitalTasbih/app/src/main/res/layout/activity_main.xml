@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/islamic_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        android:weightSum="100">
+
+        <ImageView
+
+            android:id="@+id/reset_btn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="end"
+            android:src="@drawable/res" />
+
+        <TextView
+            android:id="@+id/counter"
+            android:gravity="center"
+            android:textSize="70sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_weight="50"
+            tools:layout_editor_absoluteX="143dp"
+            tools:layout_editor_absoluteY="240dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="50"
+            android:layout_marginTop="20dp"
+            android:weightSum="100">
+
+            <ImageView
+                android:id="@+id/add_btn"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_weight="100"
+                android:src="@drawable/add" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/go_to_next_page"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#29B6F6"
+            android:text="আমল দেখুন !"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

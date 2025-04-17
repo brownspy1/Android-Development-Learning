@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">One Piece</string>
+    <string name="short_story_one_piece">Luffy এক দুরন্ত ছেলে, যার শরীর রাবারের মতো! সে স্বপ্ন দেখে Pirate King হওয়ার।একটা বিশাল সমুদ্রপথ – Grand Line – সেখানে লুকানো আছে দুনিয়ার সবচেয়ে বড় ধন, One Piece। সে জাহাজে চড়ে রওনা দেয়, আর পথে পথে নিজের Straw Hat Crew বানায়।</string>
+    <string name="about_barisal">Barisal, the Venice of the East, is known for its rivers, floating markets, green landscapes, and peaceful charm. It\'s a place of natural beauty and cultural warmth.</string>
+    <string name="titel_barisal">Beauty of barisal</string>
+    <string name="todo">TODO</string>
+    <string name="see">See More details</string>
+    <string name="image">this is image</string>
+    <string name="captain">Monkey D. Luffy</string>
+    <string name="crue_one">Roronoa Zoro</string>
+    <string name="crue_two">Nami </string>
+    <string name="crue_three">Usopp </string>
+    <string name="crue_foure">Sanji </string>
+    <string name="crew_name">Straw Hat Crew</string>
+
+
+</resources>

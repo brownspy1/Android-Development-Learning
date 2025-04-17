@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/gradiant"
+    tools:context=".Developer_about">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_marginTop="100sp"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"
+        android:src="@drawable/mahadi_pr" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="M.Mahadi"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:paddingTop="12dp"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Contact: mh0643893@email.com"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:paddingBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/aboutMeText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hey! I'm Mahadi, a programming enthusiast who loves problem-solving. Dreaming big to be a Google Software Engineer someday 🚀"
+        android:textSize="16sp"
+        android:textColor="#444444"
+        android:gravity="center"
+        android:padding="16dp"
+        android:lineSpacingExtra="4dp"
+        android:textStyle="normal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="20dp">
+
+        <ImageButton
+            android:id="@+id/btnFacebook"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="8dp"
+            android:background="@null"
+            android:src="@drawable/facebook_icon"
+            android:contentDescription="Facebook" />
+
+        <ImageButton
+            android:id="@+id/btnInstagram"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="8dp"
+            android:background="@null"
+            android:src="@drawable/instagram_icon"
+            android:contentDescription="Instagram" />
+
+        <ImageButton
+            android:id="@+id/btnlinkdin"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="8dp"
+            android:background="@null"
+            android:src="@drawable/linkedin_icon"
+            android:contentDescription="linkdin" />
+    </LinearLayout>
+
+</LinearLayout>
