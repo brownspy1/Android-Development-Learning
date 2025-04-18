@@ -3,8 +3,8 @@ package com.brownspy1.digitaltasbih;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.Toast;
+import android.widget.ImageView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -13,7 +13,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class AmolZikir extends AppCompatActivity {
-    Button developer;
+    ImageView developer;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,7 +25,7 @@ public class AmolZikir extends AppCompatActivity {
             return insets;
         });
 
-        developer = findViewById(R.id.developar);
+        developer = findViewById(R.id.developer_info);
 
         developer.setOnClickListener(new View.OnClickListener() {
             @Override

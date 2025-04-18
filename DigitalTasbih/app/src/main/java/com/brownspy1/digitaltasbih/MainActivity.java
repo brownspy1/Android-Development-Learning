@@ -62,6 +62,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Toast.makeText(MainActivity.this,"Going to Amol page",Toast.LENGTH_LONG).show();
                 hide_text.setVisibility(View.INVISIBLE);
+
                 Intent my_intent = new Intent(MainActivity.this,AmolZikir.class);
                 startActivity(my_intent);
             }
