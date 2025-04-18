@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context=".Video_play">
+
+    <WebView
+        android:id="@+id/webVideo"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="1dp" />
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/video_01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="70dp"
+                android:background="@drawable/rounded_bg"
+                android:weightSum="3">
+
+                <ImageView
+                    android:layout_width="139dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/logo" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="Python Class 01 "
+                        android:textSize="20sp"
+                        android:layout_marginBottom="5dp"
+                        android:textColor="#000000"/>
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="normal"
+                        android:text="This video i will teach you python basice this help you to Learn Ai/ML in future So lets dive in to class and dont forget to Subscribe"
+                        android:textSize="12sp"
+                        android:layout_marginBottom="5dp"
+                        android:textColor="#000000"/>
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold|italic"
+                        android:text="Duration: 20:00"
+                        android:textSize="12sp"
+                        android:textColor="#000000"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/video_02"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:background="@drawable/rounded_bg"
+                android:weightSum="3">
+
+                <ImageView
+                    android:layout_width="139dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/logo" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="Python Class 02 "
+                        android:textSize="20sp"
+                        android:layout_marginBottom="5dp"
+                        android:textColor="#000000"/>
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="normal"
+                        android:text="This video i will teach you python basice this help you to Learn Ai/ML in future So lets dive in to class and dont forget to Subscribe"
+                        android:textSize="12sp"
+                        android:layout_marginBottom="5dp"
+                        android:textColor="#000000"/>
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold|italic"
+                        android:text="Duration: 20:00"
+                        android:textSize="12sp"
+                        android:textColor="#000000"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/video_03"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                android:background="@drawable/rounded_bg"
+                android:weightSum="3">
+
+                <ImageView
+                    android:layout_width="139dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/logo" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="Python Class 03 "
+                        android:textSize="20sp"
+                        android:layout_marginBottom="5dp"
+                        android:textColor="#000000"/>
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="normal"
+                        android:text="This video i will teach you python basice this help you to Learn Ai/ML in future So lets dive in to class and dont forget to Subscribe"
+                        android:textSize="12sp"
+                        android:layout_marginBottom="5dp"
+                        android:textColor="#000000"/>
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold|italic"
+                        android:text="Duration: 20:00"
+                        android:textSize="12sp"
+                        android:textColor="#000000"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>
