@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#079ba8"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/app_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="দ্বীন গাইড"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:textSize="50dp"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/hindsiliguri_bold"/>
+
+<!--    parent leyaut-->
+    <LinearLayout
+        android:id="@+id/parent_icon"
+        android:layout_width="350dp"
+        android:layout_height="370dp"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:weightSum="3">
+
+<!--        layout line 01-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:id="@+id/click_tasbih"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:background="@drawable/round_colore">
+
+
+                <ImageView
+                    android:id="@+id/tasbih_icon"
+                    android:layout_marginTop="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/tasbih" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tasbih_icon"
+                    android:fontFamily="@font/hindsiliguri_medium"
+                    android:text="তাসবীহ"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:textSize="30dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/click_duah"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:background="@drawable/round_colore">
+
+
+                <ImageView
+                    android:id="@+id/Daili_q"
+                    android:layout_marginTop="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/daili_q" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Daili_q"
+                    android:fontFamily="@font/hindsiliguri_medium"
+                    android:text="দুআ"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:textSize="30dp" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+        <!--        layout line 02-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:id="@+id/click_waz"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:background="@drawable/round_colore">
+
+
+                <ImageView
+                    android:id="@+id/waz_video"
+                    android:layout_marginTop="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/video" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/waz_video"
+                    android:fontFamily="@font/hindsiliguri_medium"
+                    android:text="ওয়াজ"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:textSize="30dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:background="@drawable/round_colore">
+
+
+                <ImageView
+                    android:id="@+id/hadis"
+                    android:layout_marginTop="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/hadis" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/hadis"
+                    android:fontFamily="@font/hindsiliguri_medium"
+                    android:text="হাদীস"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:textSize="30dp" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    
+    
+    <RelativeLayout
+        android:layout_width="330dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/parent_icon"
+        android:background="@drawable/round_colore">
+        
+        <ImageView
+            android:id="@+id/salat_learn"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/salat"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/salat_learn"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40dp"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:fontFamily="@font/hindsiliguri_medium"
+            android:text="নামাজ শিক্ষা"/>
+    </RelativeLayout>
+
+</RelativeLayout>
