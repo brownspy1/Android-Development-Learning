@@ -15,6 +15,9 @@
         android:theme="@style/Theme.DeenGuide"
         tools:targetApi="31">
         <activity
+            android:name=".DeveloparInfo"
+            android:exported="false" />
+        <activity
             android:name=".Salat"
             android:exported="false" />
         <activity

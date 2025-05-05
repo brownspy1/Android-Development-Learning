@@ -5,18 +5,27 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context=".DTasbih"
     android:background="#079ba8"
     android:orientation="vertical">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="20dp"
+        android:layout_margin="10dp"
         android:orientation="vertical"
         android:weightSum="100">
 
+        <ImageView
+            android:id="@+id/infodev"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            app:tint="@color/black"
+            android:src="@drawable/info_icon"
 
+            />
 
         <TextView
             android:id="@+id/counter"
@@ -25,6 +34,7 @@
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:text="০"
+            android:textColor="@color/black"
             android:layout_marginTop="100dp"
             android:layout_centerHorizontal="true"
             android:fontFamily="@font/number"

@@ -1,5 +1,6 @@
 package com.brownspy1.deenguide;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -14,7 +15,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class DTasbih extends AppCompatActivity {
 
-    ImageView add,reset;
+    ImageView add,reset,info;
     TextView cnt;
     int count = 0;
     @Override
@@ -31,7 +32,7 @@ public class DTasbih extends AppCompatActivity {
         add = findViewById(R.id.add_btn);
         reset = findViewById(R.id.reset_btn);
         cnt = findViewById(R.id.counter);
-
+        info = findViewById(R.id.infodev);
 
         add.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -49,6 +50,15 @@ public class DTasbih extends AppCompatActivity {
                 String bngaliCount = convertToBengaliNumber(count);
                 cnt.setText(String.valueOf(bngaliCount));
                 Toast.makeText(DTasbih.this, "Tasbih Count Reset", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        info.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(DTasbih.this, "Developed by M.Mahadi", Toast.LENGTH_SHORT).show();
+                Intent Developer = new Intent(DTasbih.this,DeveloparInfo.class);
+                startActivity(Developer);
             }
         });
     }

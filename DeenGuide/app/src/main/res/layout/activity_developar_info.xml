@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@color/apcolor"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"
+        android:src="@drawable/mahadi_pr"
+        android:backgroundTint="@color/apcolor"
+        android:background="@drawable/round_button_bg"
+        android:elevation="8dp"
+        android:padding="4dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_below="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="মোঃ মেহেদী"
+        android:textAlignment="center"
+        android:fontFamily="@font/hindsiliguri_bold"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:paddingTop="16dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/email"
+        android:layout_below="@+id/textView2"
+        android:fontFamily="@font/hindsiliguri_medium"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:paddingBottom="12dp" />
+
+    <TextView
+        android:id="@+id/aboutMeText"
+        android:layout_below="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/aboutme"
+        android:textSize="16sp"
+        android:fontFamily="@font/hindsiliguri_medium"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:padding="20dp"
+        android:lineSpacingExtra="6dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@+id/aboutMeText"
+        android:orientation="horizontal"
+        android:paddingTop="24dp">
+
+        <ImageView
+            android:id="@+id/btnFacebook"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_margin="8dp"
+            android:src="@drawable/facebook_icon"
+            app:tint="@color/white"
+            android:elevation="8dp"
+            android:contentDescription="Facebook" />
+
+        <ImageView
+            android:id="@+id/btnInstagram"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_margin="8dp"
+            android:src="@drawable/instagram_icon"
+            app:tint="@color/white"
+            android:elevation="8dp"
+            android:contentDescription="Instagram" />
+
+        <ImageView
+            android:id="@+id/btnlinkdin"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_margin="8dp"
+            android:src="@drawable/linkedin_icon"
+            app:tint="@color/white"
+            android:elevation="8dp"
+            android:contentDescription="LinkedIn" />
+
+    </LinearLayout>
+
+</RelativeLayout>
