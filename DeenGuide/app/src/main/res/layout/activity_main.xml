@@ -44,7 +44,8 @@
                 android:layout_height="fill_parent"
                 android:layout_weight="1"
                 android:layout_margin="10dp"
-                android:background="@drawable/round_colore">
+                android:background="@drawable/round_colore"
+                android:elevation="8dp">
 
 
                 <ImageView
@@ -73,7 +74,8 @@
                 android:layout_height="fill_parent"
                 android:layout_weight="1"
                 android:layout_margin="10dp"
-                android:background="@drawable/round_colore">
+                android:background="@drawable/round_colore"
+                android:elevation="8dp">
 
 
                 <ImageView
@@ -113,7 +115,8 @@
                 android:layout_height="fill_parent"
                 android:layout_weight="1"
                 android:layout_margin="10dp"
-                android:background="@drawable/round_colore">
+                android:background="@drawable/round_colore"
+                android:elevation="8dp">
 
 
                 <ImageView
@@ -142,7 +145,8 @@
                 android:layout_height="fill_parent"
                 android:layout_weight="1"
                 android:layout_margin="10dp"
-                android:background="@drawable/round_colore">
+                android:background="@drawable/round_colore"
+                android:elevation="8dp">
 
 
                 <ImageView
@@ -178,7 +182,8 @@
         android:layout_marginTop="20dp"
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/parent_icon"
-        android:background="@drawable/round_colore">
+        android:background="@drawable/rounded"
+        android:elevation="8dp">
         
         <ImageView
             android:id="@+id/salat_learn"

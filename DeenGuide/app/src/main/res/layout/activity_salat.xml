@@ -5,11 +5,11 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/apcolor"
-    tools:context=".Browser">
+    tools:context=".Salat">
 
     <WebView
-        android:id="@+id/hadisview"
+        android:id="@+id/webnamazsikkah"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
+
 </RelativeLayout>
