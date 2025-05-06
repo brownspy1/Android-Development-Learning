@@ -63,6 +63,7 @@ Animation faid_in,zoom_in;
             public void onClick(View v) {
                 Toast.makeText(MainActivity.this,"আপনি এখন ওয়াজ সুনতে চলছেন!",Toast.LENGTH_SHORT).show();
                 Intent wazpage = new Intent(MainActivity.this, Videos.class);
+                startActivity(wazpage);
             }
         });
 
