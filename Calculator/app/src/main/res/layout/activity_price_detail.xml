@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:padding="10dp"
+    android:background="#F8F9FA"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:scrollbars="none"
-    android:background="#F8F9FA"
-    android:padding="16dp">
+    tools:context=".PriceDetail">
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:orientation="vertical">
 
 
@@ -36,7 +39,6 @@
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:background=""
                     android:padding="10dp"
                     android:text="About"
                     android:layout_gravity="center"
@@ -62,7 +64,7 @@
                     android:textColor="@color/dark_gry" />
 
                 <TextView
-                    android:id="@+id/sourching_price"
+                        android:id="@+id/sourching_price"
                     android:layout_gravity="center"
                     android:padding="10dp"
                     android:text="0"
@@ -115,7 +117,7 @@
 
             <!-- Per Product Cost Section Header -->
             <TableRow
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="30dp"
                 android:background="@drawable/rounded_cornar">
 
                 <TextView
@@ -193,7 +195,7 @@
 
             <!-- Additional Info Header -->
             <TableRow
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="30dp"
                 android:background="@drawable/rounded_cornar">
 
                 <TextView
@@ -240,21 +242,18 @@
         </TableLayout>
         <TextView
             android:id="@+id/back_button"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="00dp"
             android:layout_marginBottom="10dp"
-            android:layout_width="320dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="পিছনে যা"
             android:layout_gravity="center"
-            android:background="@drawable/rounded"
-            android:backgroundTint="#F8F9FA"
+            android:textColor="@color/white"
+            android:background="#023567"
             android:gravity="center"
             android:textSize="25dp"
-            android:elevation="10dp"
-            android:fontFamily="@font/hindsiligurimedium" />
+            android:fontFamily="@font/hindsiliguribold" />
 
 
     </LinearLayout>
-
-
 </ScrollView>

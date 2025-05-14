@@ -9,19 +9,28 @@
     android:orientation="vertical"
     android:background="#F8F9FA"
     android:padding="10dp"
+    android:scrollbars="none"
     tools:context=".MainActivity">
     
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
-
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/Product_details"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/hindsiliguribold"
+            android:textSize="30dp"
+            android:gravity="center"
+            android:textColor="@color/primary"/>
         <!-- Product Name Section -->
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="350dp"
+            android:layout_gravity="center"
             android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
-            android:layout_marginLeft="25dp"
+            android:layout_marginTop="35dp"
             android:fontFamily="@font/hindsiligurimedium"
             android:text="@string/ProductName"
             android:textSize="20dp" />
@@ -35,16 +44,16 @@
             android:backgroundTint="@color/white"
             android:hint="@string/ProductName"
             android:fontFamily="@font/hindsiligurimedium"
-            android:inputType="number"
+            android:inputType="text"
             android:elevation="10dp"
             android:ems="10" />
         <!-- Product price Section -->
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="350dp"
+            android:layout_gravity="center"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
 
-            android:layout_marginLeft="25dp"
             android:fontFamily="@font/hindsiligurimedium"
             android:text="@string/ProductPrice"
             android:textSize="20dp"/>
@@ -64,11 +73,10 @@
 
         <!-- Chinis Curiarcarge Section -->
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="350dp"
+            android:layout_gravity="center"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-
-            android:layout_marginLeft="25dp"
             android:fontFamily="@font/hindsiligurimedium"
             android:text="@string/ChinisCuriarcarge"
             android:textSize="20dp"/>
@@ -89,11 +97,10 @@
 
         <!-- ShipingCuriarcarge Section -->
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="350dp"
+            android:layout_gravity="center"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-
-            android:layout_marginLeft="25dp"
             android:fontFamily="@font/hindsiligurimedium"
             android:text="@string/ShipingCuriarcarge"
             android:textSize="20dp"/>
@@ -113,11 +120,10 @@
 
         <!-- ProductQuantity Section -->
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="350dp"
+            android:layout_gravity="center"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-
-            android:layout_marginLeft="25dp"
             android:fontFamily="@font/hindsiligurimedium"
             android:text="@string/ProductQuantity"
             android:textSize="20dp"/>
@@ -131,17 +137,16 @@
             android:backgroundTint="@color/white"
             android:hint="@string/ProductQuantity"
             android:fontFamily="@font/hindsiligurimedium"
-            android:inputType="number"
+            android:inputType="numberDecimal"
             android:elevation="10dp"
             android:ems="10" />
 
         <!-- CAC Section -->
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="350dp"
+            android:layout_gravity="center"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-
-            android:layout_marginLeft="25dp"
             android:fontFamily="@font/hindsiligurimedium"
             android:text="@string/CAC"
             android:textSize="20dp"/>
@@ -163,11 +168,10 @@
 
         <!-- OverheadCost Section -->
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="350dp"
+            android:layout_gravity="center"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-
-            android:layout_marginLeft="25dp"
             android:fontFamily="@font/hindsiligurimedium"
             android:text="@string/OverheadCost"
             android:textSize="20dp"/>
@@ -187,11 +191,10 @@
 
         <!-- profitpercent Section -->
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="350dp"
+            android:layout_gravity="center"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-
-            android:layout_marginLeft="25dp"
             android:fontFamily="@font/hindsiligurimedium"
             android:text="@string/profitpercent"
             android:textSize="20dp"/>
@@ -213,16 +216,19 @@
 
 
 
-        <Button
+        <TextView
             android:id="@+id/submit_button"
-            android:layout_width="match_parent"
+            android:layout_width="350dp"
             android:layout_height="60dp"
             android:layout_marginTop="40dp"
-            android:text="SUBMIT"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="ক্যালকুলেট"
+            android:textColor="@color/white"
             android:textSize="20sp"
             android:textStyle="bold"
-            android:background="@drawable/rounded_cornar"
-            android:backgroundTint="#FFB300"
+            android:background="@drawable/rounded"
+            android:backgroundTint="@color/primary"
             />
 
 

@@ -8,5 +8,6 @@
     <string name="CAC">কাস্টমার অ্যাকুইজিশন কস্ট লিখুন:</string>
     <string name="OverheadCost"> ওভারহেড কস্ট লিখুন:</string>
     <string name="profitpercent"> আপনার প্রোডাক্টে কত % মুনাফা চান? লিখুন:</string>
+    <string name="Product_details"> প্রোডাক্টের মূল্য নির্ধারণ হিসাব </string>
 
 </resources>
