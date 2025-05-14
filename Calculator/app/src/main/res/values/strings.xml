@@ -4,4 +4,9 @@
     <string name="ProductPrice">একটি প্রোডাক্ট এর দাম লিখুন:</string>
     <string name="ChinisCuriarcarge">চায়নিজ কুরিয়ার চার্জ লিখুন:</string>
     <string name="ShipingCuriarcarge">সিপিং চার্জ লিখুন:</string>
+    <string name="ProductQuantity">কত পিছ প্রোডাক্ট তা লিখুন:</string>
+    <string name="CAC">কাস্টমার অ্যাকুইজিশন কস্ট লিখুন:</string>
+    <string name="OverheadCost"> ওভারহেড কস্ট লিখুন:</string>
+    <string name="profitpercent"> আপনার প্রোডাক্টে কত % মুনাফা চান? লিখুন:</string>
+
 </resources>

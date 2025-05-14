@@ -7,27 +7,30 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#B3E5FC"
+    android:background="#F8F9FA"
+    android:padding="10dp"
     tools:context=".MainActivity">
     
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="10dp"
         android:orientation="vertical">
+
         <!-- Product Name Section -->
         <TextView
-            android:layout_marginTop="40dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/ProductName"
-            android:textSize="15dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="25dp"
             android:fontFamily="@font/hindsiligurimedium"
-            />
+            android:text="@string/ProductName"
+            android:textSize="20dp" />
         <EditText
-            android:layout_width="match_parent"
+            android:id="@+id/in_name"
+            android:layout_width="350dp"
             android:layout_height="60dp"
             android:padding="10dp"
+            android:layout_gravity="center"
             android:background="@drawable/rounded"
             android:backgroundTint="@color/white"
             android:hint="@string/ProductName"
@@ -37,17 +40,20 @@
             android:ems="10" />
         <!-- Product price Section -->
         <TextView
-            android:layout_marginTop="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/ProductPrice"
-            android:textSize="15dp"
+            android:layout_marginTop="10dp"
+
+            android:layout_marginLeft="25dp"
             android:fontFamily="@font/hindsiligurimedium"
-            />
+            android:text="@string/ProductPrice"
+            android:textSize="20dp"/>
         <EditText
-            android:layout_width="match_parent"
+            android:id="@+id/in_price"
+            android:layout_width="350dp"
             android:layout_height="60dp"
             android:padding="10dp"
+            android:layout_gravity="center"
             android:background="@drawable/rounded"
             android:backgroundTint="@color/white"
             android:hint="@string/ProductPrice"
@@ -55,6 +61,155 @@
             android:inputType="number"
             android:elevation="10dp"
             android:ems="10" />
+
+        <!-- Chinis Curiarcarge Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+
+            android:layout_marginLeft="25dp"
+            android:fontFamily="@font/hindsiligurimedium"
+            android:text="@string/ChinisCuriarcarge"
+            android:textSize="20dp"/>
+        <EditText
+            android:id="@+id/in_chinis"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:background="@drawable/rounded"
+            android:backgroundTint="@color/white"
+            android:hint="@string/ChinisCuriarcarge"
+            android:fontFamily="@font/hindsiligurimedium"
+            android:inputType="number"
+            android:elevation="10dp"
+            android:ems="10" />
+
+
+        <!-- ShipingCuriarcarge Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+
+            android:layout_marginLeft="25dp"
+            android:fontFamily="@font/hindsiligurimedium"
+            android:text="@string/ShipingCuriarcarge"
+            android:textSize="20dp"/>
+        <EditText
+            android:id="@+id/ShipingCuriarcarge"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:background="@drawable/rounded"
+            android:backgroundTint="@color/white"
+            android:hint="@string/ShipingCuriarcarge"
+            android:fontFamily="@font/hindsiligurimedium"
+            android:inputType="number"
+            android:elevation="10dp"
+            android:ems="10" />
+
+        <!-- ProductQuantity Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+
+            android:layout_marginLeft="25dp"
+            android:fontFamily="@font/hindsiligurimedium"
+            android:text="@string/ProductQuantity"
+            android:textSize="20dp"/>
+        <EditText
+            android:id="@+id/quantity"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:background="@drawable/rounded"
+            android:backgroundTint="@color/white"
+            android:hint="@string/ProductQuantity"
+            android:fontFamily="@font/hindsiligurimedium"
+            android:inputType="number"
+            android:elevation="10dp"
+            android:ems="10" />
+
+        <!-- CAC Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+
+            android:layout_marginLeft="25dp"
+            android:fontFamily="@font/hindsiligurimedium"
+            android:text="@string/CAC"
+            android:textSize="20dp"/>
+        <EditText
+            android:id="@+id/CAC"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:background="@drawable/rounded"
+            android:backgroundTint="@color/white"
+            android:hint="@string/CAC"
+            android:fontFamily="@font/hindsiligurimedium"
+            android:inputType="number"
+            android:elevation="10dp"
+            android:ems="10" />
+
+
+
+        <!-- OverheadCost Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+
+            android:layout_marginLeft="25dp"
+            android:fontFamily="@font/hindsiligurimedium"
+            android:text="@string/OverheadCost"
+            android:textSize="20dp"/>
+        <EditText
+            android:id="@+id/OverheadCost"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:background="@drawable/rounded"
+            android:backgroundTint="@color/white"
+            android:hint="@string/OverheadCost"
+            android:fontFamily="@font/hindsiligurimedium"
+            android:inputType="number"
+            android:elevation="10dp"
+            android:ems="10" />
+
+        <!-- profitpercent Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+
+            android:layout_marginLeft="25dp"
+            android:fontFamily="@font/hindsiligurimedium"
+            android:text="@string/profitpercent"
+            android:textSize="20dp"/>
+        <EditText
+            android:id="@+id/profitpercent"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:background="@drawable/rounded"
+            android:backgroundTint="@color/white"
+            android:hint="@string/profitpercent"
+            android:fontFamily="@font/hindsiligurimedium"
+            android:inputType="number"
+            android:elevation="10dp"
+            android:ems="10" />
+
+
 
 
 

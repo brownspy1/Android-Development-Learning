@@ -2,232 +2,259 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:scrollbars="none"
     android:background="#F8F9FA"
     android:padding="16dp">
-
-    <TableLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:shrinkColumns="1"
-        android:stretchColumns="1">
-        <!-- Product Name Section -->
-        <TextView
-            android:id="@+id/product_name"
+        android:orientation="vertical">
+
+
+
+        <TableLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:layout_marginTop="20dp"
-            android:text="Product Name"
-            android:textColor="@color/white"
-            android:background="@drawable/rounded_cornar"
-            android:gravity="center"
-            android:textSize="40sp"
-            android:textStyle="bold" />
-        <!-- Row 1 Header -->
-        <TableRow android:background="#003366" >
-
+            android:shrinkColumns="1"
+            android:stretchColumns="1">
+            <!-- Product Name Section -->
             <TextView
-                android:layout_width="0dp"
+                android:id="@+id/product_name"
                 android:layout_height="wrap_content"
-                android:background=""
-                android:padding="10dp"
-                android:text="About"
-                android:textColor="@color/white"
-                android:textStyle="bold" />
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:padding="10dp"
-                android:text="Amount(Tk)"
-                android:textColor="@color/white"
-                android:textStyle="bold" />
-        </TableRow>
-
-        <!-- Cost Rows -->
-        <TableRow android:background="@drawable/cell_border">
-
-            <TextView
-                android:padding="10dp"
-                android:text="Sourcing Price"
-                android:textColor="@color/dark_gry" />
-
-            <TextView
-                android:id="@+id/sourching_price"
-                android:layout_gravity="center"
-                android:padding="10dp"
-                android:text="2250"
-                android:textColor="@color/dark_gry" />
-        </TableRow>
-
-        <TableRow android:background="@drawable/dark">
-
-            <TextView
-                android:padding="10dp"
-                android:text="Chinis Curiarcarge"
-                android:textColor="@color/dark_gry" />
-
-            <TextView
-                android:id="@+id/chinis_curiarcarge"
-                android:layout_gravity="center"
-                android:padding="10dp"
-                android:text="641"
-                android:textColor="@color/dark_gry" />
-        </TableRow>
-
-        <TableRow android:background="@drawable/cell_border">
-
-            <TextView
-                android:padding="10dp"
-                android:text="Shipment Charge"
-                android:textColor="@color/dark_gry" />
-
-            <TextView
-                android:id="@+id/shipment_charge"
-                android:layout_gravity="center"
-                android:padding="10dp"
-                android:text="1400"
-                android:textColor="@color/dark_gry" />
-        </TableRow>
-        <TableRow android:background="@drawable/dark">
-
-            <TextView
-                android:padding="10dp"
-                android:text="Product Quantity"
-                android:textColor="@color/dark_gry" />
-
-            <TextView
-                android:id="@+id/product_quntyty"
-                android:layout_gravity="center"
-                android:padding="10dp"
-                android:text="1400"
-                android:textColor="@color/dark_gry" />
-        </TableRow>
-
-        <!-- Per Product Cost Section Header -->
-        <TableRow
-            android:layout_marginTop="10dp"
-            android:background="@drawable/rounded_cornar">
-
-            <TextView
                 android:layout_width="wrap_content"
-                android:layout_gravity="center"
-                android:layout_span="2"
-                android:padding="12dp"
-                android:text="Per Product Cost"
+                android:layout_marginTop="20dp"
+                android:text="প্রোডাক্ট নাম"
+                android:fontFamily="@font/hindsiliguribold"
                 android:textColor="@color/white"
-                android:textSize="16sp"
+                android:background="@drawable/rounded_cornar"
+                android:gravity="center"
+                android:textSize="30sp"
                 android:textStyle="bold" />
-        </TableRow>
+            <!-- Row 1 Header -->
+            <TableRow android:background="#003366" >
 
-        <TableRow android:background="@drawable/cell_border">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background=""
+                    android:padding="10dp"
+                    android:text="About"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
 
-            <TextView
-                android:padding="10dp"
-                android:text="Sourcing Price"
-                android:textColor="@color/dark_gry" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="10dp"
+                    android:text="Amount(Tk)"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+            </TableRow>
 
-            <TextView
-                android:id="@+id/sourching_price_per"
-                android:layout_gravity="center"
-                android:padding="10dp"
-                android:text="429"
-                android:textColor="@color/dark_gry" />
-        </TableRow>
+            <!-- Cost Rows -->
+            <TableRow android:background="@drawable/cell_border">
 
-        <TableRow android:background="@drawable/dark">
+                <TextView
+                    android:padding="10dp"
+                    android:text="Sourcing Price"
+                    android:textColor="@color/dark_gry" />
 
-            <TextView
-                android:padding="10dp"
-                android:text="CAC"
-                android:textColor="@color/dark_gry" />
+                <TextView
+                    android:id="@+id/sourching_price"
+                    android:layout_gravity="center"
+                    android:padding="10dp"
+                    android:text="0"
+                    android:textColor="@color/dark_gry" />
+            </TableRow>
 
-            <TextView
-                android:id="@+id/cac"
-                android:layout_gravity="center"
-                android:padding="10dp"
-                android:text="200"
-                android:textColor="@color/dark_gry" />
-        </TableRow>
+            <TableRow android:background="@drawable/dark">
 
-        <TableRow android:background="@drawable/cell_border">
+                <TextView
+                    android:padding="10dp"
+                    android:text="Chinis Curiarcarge"
+                    android:textColor="@color/dark_gry" />
 
-            <TextView
-                android:padding="10dp"
-                android:text="Over Head"
-                android:textColor="@color/dark_gry" />
+                <TextView
+                    android:id="@+id/chinis_curiarcarge"
+                    android:layout_gravity="center"
+                    android:padding="10dp"
+                    android:text="0"
+                    android:textColor="@color/dark_gry" />
+            </TableRow>
 
-            <TextView
-                android:id="@+id/overhead"
-                android:layout_gravity="center"
-                android:padding="10dp"
-                android:text="60"
-                android:textColor="@color/dark_gry" />
-        </TableRow>
+            <TableRow android:background="@drawable/cell_border">
 
-        <TableRow android:background="@drawable/dark">
+                <TextView
+                    android:padding="10dp"
+                    android:text="Shipment Charge"
+                    android:textColor="@color/dark_gry" />
 
-            <TextView
-                android:padding="10dp"
-                android:text="Final Price"
-                android:textColor="@color/sobuj"
-                android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/shipment_charge"
+                    android:layout_gravity="center"
+                    android:padding="10dp"
+                    android:text="0"
+                    android:textColor="@color/dark_gry" />
+            </TableRow>
+            <TableRow android:background="@drawable/dark">
 
-            <TextView
-                android:id="@+id/final_price"
-                android:layout_gravity="center"
-                android:padding="10dp"
-                android:text="690"
-                android:textColor="@color/sobuj"
-                android:textStyle="bold" />
-        </TableRow>
+                <TextView
+                    android:padding="10dp"
+                    android:text="Product Quantity"
+                    android:textColor="@color/dark_gry" />
 
-        <!-- Additional Info Header -->
-        <TableRow
+                <TextView
+                    android:id="@+id/product_quntyty"
+                    android:layout_gravity="center"
+                    android:padding="10dp"
+                    android:text="0"
+                    android:textColor="@color/dark_gry" />
+            </TableRow>
+
+            <!-- Per Product Cost Section Header -->
+            <TableRow
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_cornar">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_span="2"
+                    android:padding="12dp"
+                    android:text="Per Product Cost"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow android:background="@drawable/cell_border">
+
+                <TextView
+                    android:padding="10dp"
+                    android:text="Sourcing Price"
+                    android:textColor="@color/dark_gry" />
+
+                <TextView
+                    android:id="@+id/sourching_price_per"
+                    android:layout_gravity="center"
+                    android:padding="10dp"
+                    android:text="0"
+                    android:textColor="@color/dark_gry" />
+            </TableRow>
+
+            <TableRow android:background="@drawable/dark">
+
+                <TextView
+                    android:padding="10dp"
+                    android:text="CAC"
+                    android:textColor="@color/dark_gry" />
+
+                <TextView
+                    android:id="@+id/cac"
+                    android:layout_gravity="center"
+                    android:padding="10dp"
+                    android:text="0"
+                    android:textColor="@color/dark_gry" />
+            </TableRow>
+
+            <TableRow android:background="@drawable/cell_border">
+
+                <TextView
+                    android:padding="10dp"
+                    android:text="Over Head"
+                    android:textColor="@color/dark_gry" />
+
+                <TextView
+                    android:id="@+id/overhead"
+                    android:layout_gravity="center"
+                    android:padding="10dp"
+                    android:text="0"
+                    android:textColor="@color/dark_gry" />
+            </TableRow>
+
+            <TableRow android:background="@drawable/dark">
+
+                <TextView
+                    android:padding="10dp"
+                    android:text="Final Price"
+                    android:textColor="@color/sobuj"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/final_price"
+                    android:layout_gravity="center"
+                    android:padding="10dp"
+                    android:text="0"
+                    android:textColor="@color/sobuj"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <!-- Additional Info Header -->
+            <TableRow
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_cornar">
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_span="2"
+                    android:padding="12dp"
+                    android:text="Additional info"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow android:background="@drawable/cell_border">
+
+                <TextView
+                    android:padding="10dp"
+                    android:text="Whole Cost"
+                    android:textColor="@color/dark_gry" />
+
+                <TextView
+                    android:id="@+id/whole_cost"
+                    android:layout_gravity="center"
+                    android:padding="10dp"
+                    android:text="0"
+                    android:textColor="@color/dark_gry" />
+            </TableRow>
+
+            <TableRow android:background="@drawable/dark">
+
+                <TextView
+                    android:padding="10dp"
+                    android:text="Potential Rrofit"
+                    android:textColor="@color/dark_gry" />
+
+                <TextView
+                    android:id="@+id/potential_profit"
+                    android:layout_gravity="center"
+                    android:padding="10dp"
+                    android:text="0"
+                    android:textColor="@color/dark_gry"
+                    android:textStyle="bold" />
+            </TableRow>
+
+        </TableLayout>
+        <TextView
+            android:id="@+id/back_button"
             android:layout_marginTop="10dp"
-            android:background="@drawable/rounded_cornar">
-
-            <TextView
-                android:layout_gravity="center"
-                android:layout_span="2"
-                android:padding="12dp"
-                android:text="Additional info"
-                android:textColor="@color/white"
-                android:textSize="16sp"
-                android:textStyle="bold" />
-        </TableRow>
-
-        <TableRow android:background="@drawable/cell_border">
-
-            <TextView
-                android:padding="10dp"
-                android:text="Whole Cost"
-                android:textColor="@color/dark_gry" />
-
-            <TextView
-                android:id="@+id/whole_cost"
-                android:layout_gravity="center"
-                android:padding="10dp"
-                android:text="4291"
-                android:textColor="@color/dark_gry" />
-        </TableRow>
-
-        <TableRow android:background="@drawable/dark">
-
-            <TextView
-                android:padding="10dp"
-                android:text="Potential Rrofit"
-                android:textColor="@color/dark_gry" />
-
-            <TextView
-                android:id="@+id/potential_profit"
-                android:layout_gravity="center"
-                android:padding="10dp"
-                android:text="2,609"
-                android:textColor="@color/dark_gry"
-                android:textStyle="bold" />
-        </TableRow>
+            android:layout_marginBottom="10dp"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:text="পিছনে যা"
+            android:layout_gravity="center"
+            android:background="@drawable/rounded"
+            android:backgroundTint="#F8F9FA"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:elevation="10dp"
+            android:fontFamily="@font/hindsiligurimedium" />
 
 
-    </TableLayout>
+    </LinearLayout>
+
+
 </ScrollView>
