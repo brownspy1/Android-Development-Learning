@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#B3E5FC"
+    tools:context=".MainActivity">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+        <!-- Product Name Section -->
+        <TextView
+            android:layout_marginTop="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ProductName"
+            android:textSize="15dp"
+            android:fontFamily="@font/hindsiligurimedium"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:padding="10dp"
+            android:background="@drawable/rounded"
+            android:backgroundTint="@color/white"
+            android:hint="@string/ProductName"
+            android:fontFamily="@font/hindsiligurimedium"
+            android:inputType="number"
+            android:elevation="10dp"
+            android:ems="10" />
+        <!-- Product price Section -->
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ProductPrice"
+            android:textSize="15dp"
+            android:fontFamily="@font/hindsiligurimedium"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:padding="10dp"
+            android:background="@drawable/rounded"
+            android:backgroundTint="@color/white"
+            android:hint="@string/ProductPrice"
+            android:fontFamily="@font/hindsiligurimedium"
+            android:inputType="number"
+            android:elevation="10dp"
+            android:ems="10" />
+
+
+
+        <Button
+            android:id="@+id/submit_button"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="40dp"
+            android:text="SUBMIT"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:background="@drawable/rounded_cornar"
+            android:backgroundTint="#FFB300"
+            />
+
+
+    </LinearLayout>
+
+  </ScrollView>

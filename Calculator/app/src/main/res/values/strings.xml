@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Calculator</string>
+    <string name="ProductName" translatable="false">একটি প্রোডাক্ট এর নাম লিখুন:</string>
+    <string name="ProductPrice">একটি প্রোডাক্ট এর দাম লিখুন:</string>
+    <string name="ChinisCuriarcarge">চায়নিজ কুরিয়ার চার্জ লিখুন:</string>
+    <string name="ShipingCuriarcarge">সিপিং চার্জ লিখুন:</string>
+</resources>
