@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Appname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="81dp"
+        android:layout_centerHorizontal="true"
+        android:text="BMiGO"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:textStyle="bold|italic"
+        android:fontFamily="@font/inter_bold"/>
+
+    <ImageView
+        android:id="@+id/font_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/svg_for_home"
+        android:layout_below="@+id/Appname"
+        android:layout_marginTop="59dp"
+        android:layout_centerHorizontal="true"/>
+
+
+    <TextView
+        android:id="@+id/details_text"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/font_image"
+        android:layout_marginTop="95dp"
+        android:layout_marginLeft="53dp"
+        android:fontFamily="@font/inter_medium"
+        android:text="Get Started with\nTracking Your Health!"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:lineHeight="33dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/simpale_details"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/details_text"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="53dp"
+        android:layout_marginBottom="38dp"
+        android:fontFamily="@font/inter_light"
+        android:text="Calculate your BMI and stay on top of\nyour wellness journey, effortlessly."
+        android:textColor="@color/text_light"
+        android:textSize="16dp" />
+
+    <Button
+        android:id="@+id/startBatton"
+        android:layout_width="332dp"
+        android:layout_height="75dp"
+        android:text="Get Started"
+        android:textSize="17sp"
+        android:layout_below="@+id/simpale_details"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/Secendary"
+        android:textColor="@color/buttonText"
+        />
+
+</RelativeLayout>
