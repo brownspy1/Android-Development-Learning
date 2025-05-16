@@ -1,251 +1,258 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingLeft="30dp"
-    android:paddingRight="30dp"
+    android:orientation="vertical"
     android:background="@color/Secendary"
     tools:context=".UserInput">
-    <TextView
-        android:id="@+id/top_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="54dp"
-        android:layout_centerHorizontal="true"
-        android:text="BMI CALCULATOR"
-        android:textColor="#081854"
-        android:textSize="17.6dp"
-        android:fontFamily="@font/inter_light"/>
-
-
-    <LinearLayout
-        android:id="@+id/Age_Weight_card"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_below="@+id/top_text"
-        android:layout_marginTop="39dp"
-        android:weightSum="2">
-        <!-- Card 01 -->
-        <LinearLayout
-            android:layout_width="156dp"
-            android:layout_height="176dp"
-            android:layout_weight="1"
-            android:orientation="vertical"
-            android:layout_marginRight="10dp"
-            android:background="@drawable/rounded_card"
-            android:backgroundTint="@color/white">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Age"
-                android:layout_gravity="center"
-                android:layout_marginTop="20dp"
-                android:textSize="17.6sp"
-                android:fontFamily="@font/inter_light"
-                android:textColor="#2F2E41"
-                />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="30"
-                android:layout_gravity="center"
-                android:layout_marginTop="3dp"
-                android:textSize="57.39sp"
-                android:fontFamily="@font/inter_bold"
-                android:textColor="@color/primary"
-                />
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_gravity="center">
-                
-                <ImageView
-                    android:id="@+id/minas"
-                    android:layout_width="34dp"
-                    android:layout_height="34dp"
-                    android:src="@drawable/minas"/>
-
-                <ImageView
-                    android:id="@+id/Pluse"
-                    android:layout_width="34dp"
-                    android:layout_height="34dp"
-                    android:layout_marginLeft="31dp"
-                    android:src="@drawable/plus"/>
-
-            </LinearLayout>
-
-        </LinearLayout>
-        <!-- Card 02 -->
-        <LinearLayout
-            android:layout_width="156dp"
-            android:layout_height="176dp"
-            android:layout_weight="1"
-            android:orientation="vertical"
-            android:layout_marginRight="10dp"
-            android:background="@drawable/rounded_card"
-            android:backgroundTint="@color/white">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Weight (KG)"
-                android:layout_gravity="center"
-                android:layout_marginTop="20dp"
-                android:textSize="17.6sp"
-                android:fontFamily="@font/inter_light"
-                android:textColor="#2F2E41"
-                />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="78"
-                android:layout_gravity="center"
-                android:layout_marginTop="3dp"
-                android:textSize="57.39sp"
-                android:fontFamily="@font/inter_bold"
-                android:textColor="@color/primary"
-                />
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_gravity="center">
-
-                <ImageView
-                    android:id="@+id/Wminas"
-                    android:layout_width="34dp"
-                    android:layout_height="34dp"
-                    android:src="@drawable/minas"/>
-
-                <ImageView
-                    android:id="@+id/WPluse"
-                    android:layout_width="34dp"
-                    android:layout_height="34dp"
-                    android:layout_marginLeft="31dp"
-                    android:src="@drawable/plus"/>
-
-            </LinearLayout>
-
-        </LinearLayout>
-    </LinearLayout>
-
     <RelativeLayout
-        android:id="@+id/height_card"
         android:layout_width="match_parent"
-        android:layout_height="183dp"
-        android:layout_marginTop="23dp"
-        android:orientation="vertical"
-        android:background="@drawable/rounded_card"
-        android:backgroundTint="@color/white"
-        android:layout_below="@+id/Age_Weight_card">
-
-
-
-
-        <EditText
-            android:id="@+id/height_input"
-            android:layout_width="wrap_content"
-            android:layout_height="69dp"
-            android:fontFamily="@font/inter_bold"
-            android:layout_marginTop="3dp"
-            android:layout_centerInParent="true"
-            android:hint="5.6"
-            android:padding="1dp"
-            android:textColor="@color/primary"
-            android:textSize="57.39sp" />
-
+        android:layout_height="match_parent"
+        android:layout_margin="30dp">
 
         <TextView
-            android:id="@+id/Hight_text"
+            android:id="@+id/top_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Height (inch)"
+            android:layout_marginTop="64dp"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="20dp"
-            android:textSize="17.6sp"
-            android:layout_above="@+id/height_input"
-            android:fontFamily="@font/inter_light"
-            android:textColor="#2F2E41"
-            />
+            android:text="BMI CALCULATOR"
+            android:textColor="#081854"
+            android:textSize="25dp"
+            android:fontFamily="@font/inter_light"/>
+
+
+        <LinearLayout
+            android:id="@+id/Age_Weight_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/top_text"
+            android:layout_marginTop="50dp"
+            android:weightSum="2">
+            <!-- Card 01 -->
+            <LinearLayout
+                android:layout_width="156dp"
+                android:layout_height="176dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/rounded_card"
+                android:backgroundTint="@color/white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Age"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:textSize="17.6sp"
+                    android:fontFamily="@font/inter_light"
+                    android:textColor="#2F2E41"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="30"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="3dp"
+                    android:textSize="57.39sp"
+                    android:fontFamily="@font/inter_bold"
+                    android:textColor="@color/primary"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:id="@+id/minas"
+                        android:layout_width="34dp"
+                        android:layout_height="34dp"
+                        android:src="@drawable/minas"/>
+
+                    <ImageView
+                        android:id="@+id/Pluse"
+                        android:layout_width="34dp"
+                        android:layout_height="34dp"
+                        android:layout_marginLeft="31dp"
+                        android:src="@drawable/plus"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <!-- Card 02 -->
+            <LinearLayout
+                android:layout_width="156dp"
+                android:layout_height="176dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/rounded_card"
+                android:backgroundTint="@color/white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Weight (KG)"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:textSize="17.6sp"
+                    android:fontFamily="@font/inter_light"
+                    android:textColor="#2F2E41"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="78"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="3dp"
+                    android:textSize="57.39sp"
+                    android:fontFamily="@font/inter_bold"
+                    android:textColor="@color/primary"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:id="@+id/Wminas"
+                        android:layout_width="34dp"
+                        android:layout_height="34dp"
+                        android:src="@drawable/minas"/>
+
+                    <ImageView
+                        android:id="@+id/WPluse"
+                        android:layout_width="34dp"
+                        android:layout_height="34dp"
+                        android:layout_marginLeft="31dp"
+                        android:src="@drawable/plus"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/height_card"
+            android:layout_width="match_parent"
+            android:layout_height="183dp"
+            android:layout_marginTop="33dp"
+            android:orientation="vertical"
+            android:background="@drawable/rounded_card"
+            android:backgroundTint="@color/white"
+            android:layout_below="@+id/Age_Weight_card">
+
+
+
+
+            <EditText
+                android:id="@+id/height_input"
+                android:layout_width="wrap_content"
+                android:layout_height="69dp"
+                android:fontFamily="@font/inter_bold"
+                android:layout_marginTop="3dp"
+                android:layout_centerInParent="true"
+                android:hint="5.6"
+                android:padding="1dp"
+                android:textColor="@color/primary"
+                android:textSize="57.39sp" />
+
+
+            <TextView
+                android:id="@+id/Hight_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Height (inch)"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:textSize="17.6sp"
+                android:layout_above="@+id/height_input"
+                android:fontFamily="@font/inter_light"
+                android:textColor="#2F2E41"
+                />
+
+        </RelativeLayout>
+
+        <LinearLayout
+
+            android:id="@+id/genderLayout"
+            android:layout_width="match_parent"
+            android:layout_height="135dp"
+            android:layout_marginTop="33dp"
+            android:layout_below="@+id/height_card"
+            android:orientation="vertical"
+            android:background="@drawable/rounded_card"
+            android:backgroundTint="@color/white"
+            android:gravity="center"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gender"
+                android:textSize="17.6sp"
+                android:fontFamily="@font/inter_light"
+                android:layout_marginBottom="16dp"
+                android:textColor="#000000"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:id="@+id/textMale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Male"
+                    android:textColor="#000000"
+                    android:layout_marginEnd="8dp"/>
+
+                <Switch
+                    android:id="@+id/genderSwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:gravity="center"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:thumb="@drawable/custom_switch_thumb"
+                    android:track="@drawable/custom_switch_track"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <TextView
+                    android:id="@+id/textFemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Female"
+                    android:textColor="#000000"
+                    android:layout_marginStart="8dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/CalculatBMI"
+            android:layout_width="332dp"
+            android:layout_height="75dp"
+            android:layout_below="@+id/genderLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="55dp"
+            android:backgroundTint="@color/primary"
+            android:text="Calculate BMI" />
 
     </RelativeLayout>
 
-    <LinearLayout
 
-        android:id="@+id/genderLayout"
-        android:layout_width="match_parent"
-        android:layout_height="135dp"
-        android:layout_marginTop="23dp"
-        android:layout_below="@+id/height_card"
-        android:orientation="vertical"
-        android:background="@drawable/rounded_card"
-        android:backgroundTint="@color/white"
-        android:gravity="center"
-        android:padding="16dp">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Gender"
-            android:textSize="17.6sp"
-            android:fontFamily="@font/inter_light"
-            android:layout_marginBottom="16dp"
-            android:textColor="#000000"/>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_gravity="center">
-
-            <TextView
-                android:id="@+id/textMale"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Male"
-                android:textColor="#000000"
-                android:layout_marginEnd="8dp"/>
-
-            <Switch
-                android:id="@+id/genderSwitch"
-                android:layout_width="107dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:layout_marginEnd="20dp"
-                android:gravity="center"
-                android:layout_gravity="center_horizontal|center_vertical"
-                android:thumb="@drawable/custom_switch_thumb"
-                android:track="@drawable/custom_switch_track"
-                tools:ignore="TouchTargetSizeCheck" />
-
-            <TextView
-                android:id="@+id/textFemale"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Female"
-                android:textColor="#000000"
-                android:layout_marginStart="8dp"/>
-        </LinearLayout>
-    </LinearLayout>
-
-    <Button
-        android:id="@+id/CalculatBMI"
-        android:layout_width="match_parent"
-        android:layout_height="75dp"
-        android:layout_marginTop="58dp"
-        android:layout_below="@+id/genderLayout"
-        android:backgroundTint="@color/primary"
-        android:text="Calculate BMI"/>
-
-
-</RelativeLayout>
+</LinearLayout>
