@@ -54,10 +54,13 @@
                     android:textColor="#2F2E41"
                     />
 
-                <TextView
+                <EditText
+                    android:id="@+id/Age"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="30"
+                    android:hint="19"
+                    android:inputType="number"
+                    android:padding="1dp"
                     android:layout_gravity="center"
                     android:layout_marginTop="3dp"
                     android:textSize="57.39sp"
@@ -108,10 +111,13 @@
                     android:textColor="#2F2E41"
                     />
 
-                <TextView
+                <EditText
+                    android:id="@+id/Weight"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="78"
+                    android:hint="58"
+                    android:padding="1dp"
+                    android:inputType="number"
                     android:layout_gravity="center"
                     android:layout_marginTop="3dp"
                     android:textSize="57.39sp"
@@ -164,6 +170,7 @@
                 android:layout_marginTop="3dp"
                 android:layout_centerInParent="true"
                 android:hint="5.6"
+                android:inputType="numberDecimal"
                 android:padding="1dp"
                 android:textColor="@color/primary"
                 android:textSize="57.39sp" />
@@ -173,7 +180,7 @@
                 android:id="@+id/Hight_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Height (inch)"
+                android:text="Height (Fit . inch)"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="20dp"
                 android:textSize="17.6sp"
