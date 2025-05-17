@@ -17,7 +17,6 @@
             android:id="@+id/top_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="70dp"
             android:layout_centerHorizontal="true"
             android:text="BMI CALCULATOR"
             android:textColor="#081854"
@@ -44,7 +43,7 @@
             android:id="@+id/BMICalculatonCard"
             android:layout_width="370dp"
             android:layout_height="416dp"
-            android:layout_marginTop="82dp"
+            android:layout_marginTop="12dp"
             android:orientation="vertical"
             android:layout_centerHorizontal="true"
             android:background="@drawable/round"
@@ -103,8 +102,9 @@
 
             <TextView
                 android:id="@+id/BMI_status_text"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:gravity="center"
                 android:layout_marginTop="10dp"
                 android:layout_below="@id/BMI_output"
                 android:layout_centerHorizontal="true"
@@ -136,7 +136,7 @@
             android:layout_height="75dp"
             android:layout_below="@+id/BMICalculatonCard"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="75dp"
+            android:layout_marginTop="35dp"
             android:backgroundTint="@color/primary"
             android:textSize="20sp"
             android:text="Save the results" />

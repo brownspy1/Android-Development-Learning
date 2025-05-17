@@ -10,9 +10,10 @@
 
     <TextView
         android:id="@+id/Appname"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
+        android:gravity="center"
         android:layout_height="wrap_content"
-        android:layout_marginTop="91dp"
+        android:layout_marginTop="40dp"
         android:layout_centerHorizontal="true"
         android:text="BMiGO"
         android:textColor="@color/white"
@@ -26,7 +27,7 @@
         android:layout_height="wrap_content"
         android:src="@drawable/svg_for_home"
         android:layout_below="@+id/Appname"
-        android:layout_marginTop="89dp"
+        android:layout_marginTop="49dp"
         android:layout_centerHorizontal="true"/>
 
 
@@ -35,7 +36,7 @@
         android:layout_width="340dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/font_image"
-        android:layout_marginTop="105dp"
+        android:layout_marginTop="55dp"
         android:layout_marginLeft="53dp"
         android:fontFamily="@font/inter_medium"
         android:text="Get Started with\nTracking Your Health!"
@@ -51,7 +52,7 @@
         android:layout_below="@+id/details_text"
         android:layout_marginTop="15dp"
         android:layout_marginLeft="53dp"
-        android:layout_marginBottom="48dp"
+        android:layout_marginBottom="38dp"
         android:fontFamily="@font/inter_light"
         android:text="Calculate your BMI and stay on top of\nyour wellness journey, effortlessly."
         android:textColor="@color/text_light"

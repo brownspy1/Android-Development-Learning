@@ -2,9 +2,12 @@ package com.brownspy1.bmigo;
 
 import android.content.ContentResolver;
 import android.content.ContentValues;
+import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.media.MediaPlayer;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
@@ -36,6 +39,8 @@ public class OutputPage extends AppCompatActivity {
 
 
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -58,6 +63,9 @@ public class OutputPage extends AppCompatActivity {
         BMICalculatonCard.getViewTreeObserver().addOnGlobalLayoutListener(() -> {
             SaveBMIScore.setEnabled(true); // layout ready হলে button কাজ করুক
         });
+
+
+
 
 
         // Get the data from the Intent
@@ -85,16 +93,28 @@ public class OutputPage extends AppCompatActivity {
 
 
         //paly sound and show castomaiz text
+
+
         if (BMI >= 18.5 && BMI <= 24.9){
+            playAudio("https://brownspy1.github.io/Deen/voice/perfact.mp3");
             BMI_status_text.setText("NORMAL BMI");
-        } else if (BMI >= 25 && BMI <= 29.9) {
+            BMI_status_text.setBackgroundResource(R.drawable.green);
+        } else if (BMI >24.9 && BMI <= 29.9) {
             BMI_status_text.setText("OVERWEIGHT BMI");
-        } else if (BMI>=30 && BMI<=40) {
+            playAudio("https://brownspy1.github.io/Deen/voice/over.mp3");
+            BMI_status_text.setBackgroundResource(R.drawable.rad);
+        } else if (BMI>29.9 && BMI<=40) {
             BMI_status_text.setText("OBESE BMI");
+            playAudio("https://brownspy1.github.io/Deen/voice/over.mp3");
+            BMI_status_text.setBackgroundResource(R.drawable.rad);
         } else if (BMI > 40) {
             BMI_status_text.setText("EXTREME OBESE BMI");
+            playAudio("https://brownspy1.github.io/Deen/voice/over.mp3");
+            BMI_status_text.setBackgroundResource(R.drawable.rad);
         } else if (BMI < 18.5) {
             BMI_status_text.setText("UNDERWEIGHT BMI");
+            playAudio("https://brownspy1.github.io/Deen/voice/under.mp3");
+            BMI_status_text.setBackgroundResource(R.drawable.yellow);
         }
 
         SaveBMIScore.setOnClickListener(new View.OnClickListener() {
@@ -110,6 +130,36 @@ public class OutputPage extends AppCompatActivity {
 
 
 
+    }
+    public Boolean iscon(){
+        //chack internet connection
+        ConnectivityManager conectonManager = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo networkInfo = conectonManager.getActiveNetworkInfo();
+        if (networkInfo!=null && networkInfo.isConnected()){
+            return true;
+
+        }else {
+            return false;
+        }
+    }
+    public void playAudio(String link){
+        if (iscon()){
+            playsound = new MediaPlayer();
+            try {
+                playsound.setDataSource(link);
+                playsound.prepare();
+                playsound.start();
+            } catch (Exception e) {
+                Log.e("TAG", "Error playing sound: " + e.getMessage());
+            }
+        }else {
+            try {
+                playsound = MediaPlayer.create(this, R.raw.nointernet);
+                playsound.start();
+            } catch (Exception e) {
+                Log.e("TAG", "Error playing sound: " + e.getMessage());
+            }
+        }
     }
     public Bitmap getBitmapFromView(View view) {
         Bitmap bitmap = Bitmap.createBitmap(view.getWidth(), view.getHeight(), Bitmap.Config.ARGB_8888);
