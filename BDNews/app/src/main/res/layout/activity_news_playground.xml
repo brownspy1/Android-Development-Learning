@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".NewsPlayground">
+    <RelativeLayout
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <ImageView
+            android:id="@+id/newsImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bg"/>
+        <TextView
+            android:id="@+id/catafornews"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="5dp"
+            android:paddingVertical="2dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:background="@drawable/roundforcat"
+            android:backgroundTint="#00A7FF"
+            android:text="Gaming"
+            />
+        <TextView
+            android:id="@+id/Titeltext"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:lineHeight="20dp"
+            android:layout_alignParentBottom="true"
+            android:fontFamily="@font/hindsiliguri_medium"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:background="#B2EF6C00"
+            android:text="ইরান-ইসরায়েল: সামরিক শক্তিতে কে এগিয়ে?"
+            android:maxLines="2"
+            />
+    </RelativeLayout>
+    <ScrollView
+        android:id="@+id/scrollnews"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/scroll">
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/NewsDItailsText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:lineHeight="27dp"
+                android:fontFamily="@font/hindsiliguri_regular"
+                android:textSize="17sp"
+                android:gravity=""
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="6dp"
+                android:text="হে জবুল্লাহ নেতা হাসান নাসরাল্লাহকে হত্যা এবং লেবাননে ইসরায়েলের আক্রমণকে ঘিরে ইসরায়েলে ইরানের মিসাইল হামলার পর দুই দেশের মধ্যে এখন চরম উত্তেজনা বিরাজ করছে।
+এ ঘটনায় মধ্যপ্রাচ্যসহ পুরো বিশ্বের নজর এখন ইরান-ইসরায়েল পরিস্থিতির দিকে। ইরানের হামলার জবাবে ইসরায়েলের পদক্ষেপ কী হবে সেটি নিয়েও উদ্বেগ রয়েছে। হে জবুল্লাহ নেতা হাসান নাসরাল্লাহকে হত্যা এবং লেবাননে ইসরায়েলের আক্রমণকে ঘিরে ইসরায়েলে ইরানের মিসাইল হামলার পর দুই দেশের মধ্যে এখন চরম উত্তেজনা বিরাজ করছে।
+এ ঘটনায় মধ্যপ্রাচ্যসহ পুরো বিশ্বের নজর এখন ইরান-ইসরায়েল পরিস্থিতির দিকে। ইরানের হামলার জবাবে ইসরায়েলের পদক্ষেপ কী হবে সেটি নিয়েও উদ্বেগ রয়েছে। হে জবুল্লাহ নেতা হাসান নাসরাল্লাহকে হত্যা এবং লেবাননে ইসরায়েলের আক্রমণকে ঘিরে ইসরায়েলে ইরানের মিসাইল হামলার পর দুই দেশের মধ্যে এখন চরম উত্তেজনা বিরাজ করছে।
+এ ঘটনায় মধ্যপ্রাচ্যসহ পুরো বিশ্বের নজর এখন ইরান-ইসরায়েল পরিস্থিতির দিকে। ইরানের হামলার জবাবে ইসরায়েলের পদক্ষেপ কী হবে সেটি নিয়েও উদ্বেগ রয়েছে। হে জবুল্লাহ নেতা হাসান নাসরাল্লাহকে হত্যা এবং লেবাননে ইসরায়েলের আক্রমণকে ঘিরে ইসরায়েলে ইরানের মিসাইল হামলার পর দুই দেশের মধ্যে এখন চরম উত্তেজনা বিরাজ করছে।
+এ ঘটনায় মধ্যপ্রাচ্যসহ পুরো বিশ্বের নজর এখন ইরান-ইসরায়েল পরিস্থিতির দিকে। ইরানের হামলার জবাবে ইসরায়েলের পদক্ষেপ কী হবে সেটি নিয়েও উদ্বেগ রয়েছে।"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/autoRead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="10dp"
+        android:padding="5dp"
+        android:tag="STOP"
+        android:background="@drawable/flow"
+        android:src="@drawable/baseline_mic_24"
+        android:layout_marginBottom="10dp"
+
+        app:elevation="8dp"/>
+</RelativeLayout>
