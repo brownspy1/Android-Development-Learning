@@ -1,0 +1,80 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:layout_marginTop="8dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:cardCornerRadius="14dp"
+        android:backgroundTint="#F9E5FB">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- Number Circle -->
+            <TextView
+                android:id="@+id/Cardnum"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="16dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/rounded"
+                android:backgroundTint="#DB00FF"
+                android:text="1"
+                android:textColor="@android:color/white"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:fontFamily="@font/adwabold" />
+
+            <!-- Topic Text -->
+
+            <!-- Time -->
+            <TextView
+                android:id="@+id/catagory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@+id/linearLayout"
+                android:layout_toEndOf="@id/Cardnum"
+                android:fontFamily="@font/adwabold"
+                android:text="Topic + Subtopic"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:textColor="#2F4F4F"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="16dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_clock"
+                    app:tint="#FF00D6" />
+
+                <TextView
+                    android:id="@+id/timeText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:fontFamily="@font/adwabold"
+                    android:text="15 minutes"
+                    android:textColor="#FF00D6"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

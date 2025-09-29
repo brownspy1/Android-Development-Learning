@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".news_manupulate">
+    <ListView
+        android:id="@+id/news_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:dividerHeight="0dp"/>
+    <RelativeLayout
+        android:id="@+id/buttonCard"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginHorizontal="70dp"
+        android:focusable="true"
+        android:clickable="true"
+        android:background="@drawable/cercel_rounded"
+        android:backgroundTint="@color/white"
+        android:elevation="4dp">
+
+        <ImageView
+            android:id="@+id/add_btn"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/addbtn"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_centerInParent="true"
+            android:background="@drawable/cercel_rounded"
+            android:backgroundTint="@color/white"
+            android:elevation="4dp"/>
+
+
+        <ImageView
+            android:id="@+id/edit_btn"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_toStartOf="@id/add_btn" android:layout_centerVertical="true" android:layout_marginEnd="15dp"      android:background="@drawable/rounded"
+            android:backgroundTint="#FFFFFF"
+            android:elevation="4dp"
+            android:src="@drawable/pencill" />
+
+        <ImageView
+            android:id="@+id/delete_btn"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_toEndOf="@id/add_btn" android:layout_centerVertical="true" android:layout_marginStart="15dp"    android:background="@drawable/rounded"
+            android:backgroundTint="#FFFFFF"
+            android:elevation="4dp"
+            android:src="@drawable/delete" />
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:paddingHorizontal="10dp"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/usarCard"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/round_cornere"
+        android:backgroundTint="#F4F2F2"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/usarImage"
+            android:layout_width="100dp"
+            android:layout_margin="10dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/demo_image"
+            android:scaleType="centerCrop"
+            android:background="@drawable/image_round"
+            android:clipToOutline="true"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|left"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/catagoris"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="5dp"
+                android:paddingVertical="2dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:background="@drawable/roundforcat"
+                android:backgroundTint="#E65100"
+                android:text="Gaming" />
+
+            <TextView
+                android:id="@+id/newsTitel"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:lineHeight="20dp"
+                android:fontFamily="@font/hindsiliguri_medium"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:text="ইরান-ইসরায়েল: সামরিক শক্তিতে কে এগিয়ে?"
+                android:maxLines="2"/>
+
+            <TextView
+                android:id="@+id/newsDisc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lineHeight="15dp"
+                android:fontFamily="@font/hindsiliguri_regular"
+                android:maxLines="2"
+                android:text="হে জবুল্লাহ নেতা হাসান নাসরাল্লাহকে হত্যা এবং লেবাননে ইসরায়েলের আক্রমণকে ঘিরে ইসরায়েলে ইরানের মিসাইল হামলার পর দুই দেশের মধ্যে এখন চরম উত্তেজনা বিরাজ করছে।
+এ ঘটনায় মধ্যপ্রাচ্যসহ পুরো বিশ্বের নজর এখন ইরান-ইসরায়েল পরিস্থিতির দিকে। ইরানের হামলার জবাবে ইসরায়েলের পদক্ষেপ কী হবে সেটি নিয়েও উদ্বেগ রয়েছে।" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
