@@ -15,9 +15,9 @@
         app:showAsAction="ifRoom"
         />
     <item
-        android:id="@+id/menu_about"
-        android:title="About"
-        android:icon="@drawable/info"
+        android:id="@+id/menu_contact"
+        android:title="Contact"
+        android:icon="@drawable/outline_contact_page_24"
         app:showAsAction="ifRoom"
         />
 </menu>
