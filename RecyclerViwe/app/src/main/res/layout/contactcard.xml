@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_margin="10dp"
+    android:layout_height="150dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/rounded"
+        android:backgroundTint="#FF9800">
+        <ImageView
+            android:id="@+id/contact_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/rounded"
+            android:src="@drawable/placeholder"
+            android:scaleType="centerCrop"
+            android:backgroundTint="@color/white"/>
+        <TextView
+            android:id="@+id/contact_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="M.Mahadi"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_toEndOf="@id/contact_image"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:id="@+id/contact_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="01732657219"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_below="@id/contact_name"
+            android:layout_toRightOf="@id/contact_image"
+            android:layout_marginLeft="10dp"
+            />
+
+    </RelativeLayout>
+</LinearLayout>

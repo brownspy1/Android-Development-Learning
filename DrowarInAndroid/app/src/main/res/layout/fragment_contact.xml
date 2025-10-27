@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F5F7FA"
+    tools:context=".contact">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="24dp">
+
+            <!-- Header Text -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="যোগাযোগের তথ্য (Contact Details)"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="#2C3E50"
+                android:layout_marginBottom="24dp" />
+
+            <!-- Contact Card Section -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/rounded_background"
+                android:padding="20dp"
+                android:elevation="4dp"
+                android:layout_marginBottom="20dp">
+
+                <!-- Profile Picture Placeholder (You should use a proper ImageView with src/background) -->
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/images"
+                    android:background="@drawable/circle_background"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="12dp"
+                    android:contentDescription="Profile Picture" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="এম. মাহাদি (M. Mahadi)"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#1C2833"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="4dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ব্যবস্থাপনা পরিচালক (Managing Director)"
+                    android:textSize="14sp"
+                    android:textColor="#5D6D7E"
+                    android:layout_gravity="center_horizontal" />
+            </LinearLayout>
+
+            <!-- Detail Rows Section -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/rounded_background"
+                android:padding="16dp"
+                android:elevation="4dp">
+
+                <!-- 1. Phone Row -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingVertical="12dp"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@android:drawable/sym_action_call"
+                        android:layout_marginEnd="16dp"
+                        android:contentDescription="Phone Icon"
+                        app:tint="#3498DB" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+880 1XXXXXXXXX"
+                        android:textSize="16sp"
+                        android:textColor="#2C3E50" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#EAECEE"
+                    android:layout_marginVertical="4dp"/>
+
+                <!-- 2. Email Row -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingVertical="12dp"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@android:drawable/ic_dialog_email"
+                        android:tint="#3498DB"
+                        android:layout_marginEnd="16dp"
+                        android:contentDescription="Email Icon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="m.mahadi@example.com"
+                        android:textSize="16sp"
+                        android:textColor="#2C3E50" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#EAECEE"
+                    android:layout_marginVertical="4dp"/>
+
+                <!-- 3. Address Row -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingVertical="12dp">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@android:drawable/ic_dialog_map"
+                        android:tint="#3498DB"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginTop="2dp"
+                        android:contentDescription="Location Icon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="House # 12, Road # 5, Gulshan 1, Dhaka 1212, Bangladesh"
+                        android:textSize="16sp"
+                        android:textColor="#2C3E50" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+
+    <!--
+    NOTE: For this layout to look rounded and elevated, you need to create two drawables
+    in your 'res/drawable' folder:
+    1. rounded_background.xml (for the card effect)
+    2. circle_background.xml (for the profile picture circle)
+    -->

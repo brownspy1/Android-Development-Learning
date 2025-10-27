@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "302279078747",
+    "project_id": "fir-firebase-app-84e55",
+    "storage_bucket": "fir-firebase-app-84e55.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:302279078747:android:9e4e5cd1ad75395cbea07e",
+        "android_client_info": {
+          "package_name": "com.brownspy1.firebase_topics"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDE1edXWW7Vlk5Jo0DKB_nRUdiRmcfnvJo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
